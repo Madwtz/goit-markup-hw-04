@@ -1,0 +1,145 @@
+:root {
+  --accent-color: #2f303a;
+  --link-color: #757575;
+  --main-color: #fff;
+  --second-color: #2196f3;
+
+  --logo-font-family: "raleway", "sans-serif";
+  --heading-font-family: "roboto", "sans-serif";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+.container {
+  width: 1600px;
+}
+
+.container-header {
+  background-color: var(--main-color);
+  padding: 40px 50px 40px 100px;
+  display: flex;
+}
+.container-header,
+.main-navigation a,
+.container-header .main-navigation a:visited,
+.contact-section {
+  color: var(--link-color);
+  font-size: 0.875em;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.main-navigation ul,
+.contact-section ul {
+  list-style-type: none;
+  display: flex;
+}
+.item-logo {
+  font-size: 26px;
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+}
+.item-web-span {
+  color: var(--second-color);
+}
+
+.container-header a {
+  color: #000000;
+  text-decoration: none;
+}
+section.general-section {
+  background-color: var(--accent-color);
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
+}
+section.general-section h1 {
+  font-family: var(--heading-font-family);
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  max-width: 80%;
+}
+section.general-section button {
+  font-size: 16px;
+  font-family: var(--heading-font-family);
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: normal;
+  width: fit-content;
+  color: var(--main-color);
+  background-color: var(--second-color);
+  border-radius: 4px;
+  box-shadow: #00000026;
+  box-sizing: border-box;
+}
+.skills-section ul {
+  display: flex;
+  list-style-type: none;
+  max-width: 100%;
+}
+.skills-section li {
+  margin-right: 30px;
+}
+.description-section h3,
+.team-section h3 {
+  margin-top: 60px;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+}
+.description-section ul,
+.team-section ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 20px;
+}
+
+.description-section li {
+  padding: 60px;
+}
+.team-section img {
+  width: 310px;
+  height: 260px;
+  padding-right: 50px;
+}
+.team-section {
+  background-color: #f5f4fa;
+}
+.footer-section {
+  background-color: var(--accent-color);
+  height: 251px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.footer-address li,
+a {
+  color: var(--main-color);
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 60px;
+}
+.footer-section nav a {
+  font-size: 26px;
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  padding-left: 160px;
+}

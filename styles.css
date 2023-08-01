@@ -25,6 +25,7 @@ h6 {
 body {
   width: 1600px;
   margin: 0 auto;
+  height: 2930px;
 }
 ul {
   list-style-type: none;
@@ -110,10 +111,17 @@ section.general-section button {
 .skills-section li {
   margin-right: 30px;
 }
+.description-section li {
+  padding: 60px;
+}
+
+.description-section img {
+  width: 370px;
+  height: 294px;
+}
 .team-list,
 .description-list {
   display: flex;
-  justify-content: space-between;
 }
 .description-section h3,
 .team-section h3 {
@@ -123,21 +131,18 @@ section.general-section button {
   font-size: 36px;
   text-align: center;
 }
-
-.description-section li {
-  padding: 60px;
-}
-
-.description-section img {
-  width: 370px;
-  height: 294px;
-}
 .team-list {
   gap: 30px;
+}
+.team-list {
+  width: 1170px;
+  height: 428px;
+  align-items: center;
 }
 .team-section .team-list img {
   width: 270px;
   height: 260px;
+  flex-shrink: 0;
 }
 .team-list h4 {
   text-align: center;
@@ -145,12 +150,17 @@ section.general-section button {
 .team-section {
   background-color: #f5f4fa;
   width: 1600px;
-}
-.team-section li + li {
-  width: 1170px;
-  height: 428px;
+  height: 708px;
+  flex-shrink: 0;
 }
 
+.team-list li {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 270px;
+  height: 428px;
+  flex-shrink: 0;
+}
 .team-section p {
   color: #757575;
   text-align: center;
@@ -201,4 +211,26 @@ a {
 .icons-list .icon svg {
   width: 20px;
   height: 20px;
+}
+
+.logo-customers h4 {
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.icons svg {
+  width: 106px;
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.logo-list {
+  width: 170px;
+  height: 92px;
+  margin-bottom: 94px;
+}
+.container-logo,
+.logo-list {
+  display: flex;
+  justify-content: center;
 }

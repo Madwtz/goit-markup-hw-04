@@ -111,6 +111,41 @@ section.general-section button {
 .skills-section li {
   margin-right: 30px;
 }
+.skills-section h4 {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.skills-section p {
+  width: 270px;
+  height: 75px;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.skills-section svg {
+  width: 70px;
+  height: 70px;
+}
+.svg-logo {
+  display: inline-flex;
+  border-radius: 4px;
+  background: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-top: 94px;
+}
+
 .description-section li {
   padding: 60px;
 }
@@ -213,7 +248,8 @@ a {
   height: 20px;
 }
 
-.logo-customers h4 {
+.logo-customers h4,
+.team-section-container h4 {
   text-align: center;
   margin-top: 94px;
   margin-bottom: 50px;

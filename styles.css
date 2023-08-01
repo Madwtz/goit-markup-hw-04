@@ -103,8 +103,10 @@ section.general-section button {
   box-sizing: border-box;
   margin-top: 60px;
 }
+
 .skills-section ul {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   max-width: 100%;
 }
@@ -201,28 +203,6 @@ section.general-section button {
   text-align: center;
 }
 
-.footer-section {
-  background-color: var(--accent-color);
-  height: 251px;
-  padding-top: 60px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-.footer-address li,
-a {
-  color: var(--main-color);
-
-  text-decoration: none;
-  padding-left: 60px;
-}
-.footer-section nav a {
-  font-size: 26px;
-  font-family: var(--logo-font-family);
-  font-weight: 700;
-  padding-left: 160px;
-}
-
 .icons-list {
   display: flex;
   margin-top: 30px;
@@ -269,4 +249,42 @@ a {
 .logo-list {
   display: flex;
   justify-content: center;
+  gap: 30px;
+}
+
+.footer-section {
+  background-color: var(--accent-color);
+  height: 251px;
+  width: 1600px;
+  padding-top: 60px;
+}
+.footer-address {
+  padding-left: 215px;
+}
+.footer-address li,
+a {
+  color: var(--main-color);
+
+  text-decoration: none;
+}
+.footer-section nav {
+  font-size: 26px;
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  padding-left: 215px;
+}
+.footer-section nav span {
+  padding-left: 40px;
+}
+
+.container-find-us h5 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  text-align: center;
 }

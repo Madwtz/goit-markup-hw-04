@@ -175,13 +175,15 @@ section.general-section button {
   display: flex;
 }
 .description-section h3,
-.team-section h3 {
-  margin-top: 60px;
+.team-section-container h3 {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-family: var(--heading-font-family);
   font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
+
 .team-list {
   gap: 30px;
   align-items: center;

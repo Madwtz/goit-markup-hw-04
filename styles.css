@@ -74,8 +74,7 @@ a {
   font-size: 26px;
   font-family: var(--logo-font-family);
   font-weight: 700;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 37px;
 }
 .item-web-span {
   color: var(--second-color);
@@ -185,12 +184,9 @@ section.general-section button {
 }
 .team-list {
   gap: 30px;
-}
-.team-list {
-  width: 1170px;
-  height: 428px;
   align-items: center;
 }
+
 .team-section .team-list img {
   width: 270px;
   height: 260px;
@@ -209,9 +205,6 @@ section.general-section button {
 .team-list li {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  width: 270px;
-  height: 428px;
-  flex-shrink: 0;
 }
 .team-section p {
   color: #757575;
@@ -244,15 +237,26 @@ section.general-section button {
   height: 20px;
 }
 
-.logo-customers h4,
 .team-section-container h4 {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.logo-customers h4 {
   margin-top: 94px;
   margin-bottom: 50px;
+  text-align: center;
+  color: #212121;
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
 }
 .icons svg {
-  width: 106px;
-  height: 60px;
+  width: 170px;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }

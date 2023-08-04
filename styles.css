@@ -162,11 +162,13 @@ section.general-section button {
   margin-top: 94px;
 }
 
-.description-section li {
-  padding: 60px;
+.description-list {
+  margin-right: 215px;
+  margin-left: 215px;
+  gap: 30px;
 }
-
-.description-section img {
+.description-section li {
+  margin-bottom: 94px;
   width: 370px;
   height: 294px;
 }
@@ -185,8 +187,10 @@ section.general-section button {
 }
 
 .team-list {
+  justify-content: space-between;
+  margin-left: 215px;
+  margin-right: 215px;
   gap: 30px;
-  align-items: center;
 }
 
 .team-section .team-list img {
@@ -213,6 +217,23 @@ section.general-section button {
   text-align: center;
 }
 
+.team-section-container h4 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.logo-customers h4 {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #212121;
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
 .icons-list {
   display: flex;
   margin-top: 30px;
@@ -239,23 +260,6 @@ section.general-section button {
   height: 20px;
 }
 
-.team-section-container h4 {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-.logo-customers h4 {
-  margin-top: 94px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: #212121;
-  font-family: var(--heading-font-family);
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-}
 .icons svg {
   width: 170px;
   height: 92px;
@@ -279,6 +283,12 @@ section.general-section button {
   height: 251px;
   width: 1600px;
   padding-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .footer-address {
   padding-left: 215px;

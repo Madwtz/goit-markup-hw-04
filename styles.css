@@ -33,6 +33,55 @@ a {
   transition: color var(--transition);
 }
 
+.main-navigation {
+  position: relative;
+}
+.main-navigation .studio-page:hover::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--second-color);
+  bottom: 0;
+  display: flex;
+}
+.main-navigation .portofolio-page:hover::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--second-color);
+  bottom: 0;
+  display: flex;
+}
+.main-navigation .contacts-page:hover::after {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--second-color);
+  bottom: 0;
+  display: flex;
+}
+.contact-section ul a:hover,
+.contact-section ul a:focus {
+  color: var(--second-color);
+  transition: var(--transition);
+}
+
+.icons-list a:hover,
+.icons-list a:focus {
+  background: var(--second-color);
+  stroke: var(--main-color);
+  transition: var(--transition);
+}
+
 .container-header {
   background-color: var(--main-color);
   padding-right: 225px;
@@ -51,6 +100,9 @@ a {
   line-height: normal;
   letter-spacing: normal;
   text-transform: uppercase;
+}
+.contact-section li a {
+  display: flex;
 }
 .contact-section ul {
   display: flex;
@@ -84,6 +136,7 @@ a {
   color: #000000;
   text-decoration: none;
 }
+
 section.general-section {
   background: url(images/header-img-01.png) no-repeat;
   width: 1600px;
@@ -103,19 +156,26 @@ section.general-section h1 {
   height: 120px;
   padding-top: 80px;
 }
-section.general-section button {
+.request-a-service-btn {
+  cursor: pointer;
+  outline: none;
   font-size: 16px;
   font-family: var(--heading-font-family);
   font-weight: 700;
   letter-spacing: normal;
-  width: 161px;
-  height: 30px;
-  color: var(--main-color);
-  background-color: var(--second-color);
+  width: 200px;
+  height: 50px;
+  color: #000;
+  background-color: var(--main-color);
   border-radius: 4px;
-  box-shadow: #00000026;
-  box-sizing: border-box;
-  margin-top: 60px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 76px;
+}
+.request-a-service-btn:focus,
+.request-a-service-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: background-color var(--transition);
 }
 
 .skills-section ul {
@@ -161,7 +221,6 @@ section.general-section button {
   padding: 25px 100px;
   margin-top: 94px;
 }
-
 .description-list {
   margin-right: 215px;
   margin-left: 215px;
@@ -172,6 +231,30 @@ section.general-section button {
   width: 370px;
   height: 294px;
 }
+.picture-element {
+  position: relative;
+}
+.overlay-text {
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture-element .overlay-text:hover {
+  opacity: 0;
+}
+
 .team-list,
 .description-list {
   display: flex;
@@ -234,38 +317,7 @@ section.general-section button {
   line-height: normal;
   letter-spacing: 1.08px;
 }
-.icons-list {
-  display: flex;
-  margin-top: 30px;
-  gap: 10px;
-  justify-content: center;
-}
 
-.icons-list .icon {
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 22px;
-  color: var(--social-icon-color);
-}
-
-.icons-list .icon:hover,
-.icons-list .icon:focus {
-  color: var(--main-color);
-  fill: var(--second-color);
-}
-.icons-list .icon svg {
-  width: 20px;
-  height: 20px;
-}
-
-.icons svg {
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-}
 .logo-list {
   width: 170px;
   height: 92px;
@@ -277,7 +329,9 @@ section.general-section button {
   justify-content: center;
   gap: 30px;
 }
-
+.logo-list .icons:hover {
+  stroke: var(--second-color);
+}
 .footer-section {
   background-color: var(--accent-color);
   height: 251px;
@@ -319,4 +373,85 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-align: center;
+}
+.icons-list {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.icons-list .icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  color: var(--social-icon-color);
+}
+
+.icons-list .icon:hover,
+.icons-list .icon:focus {
+  color: var(--main-color);
+  fill: var(--second-color);
+}
+.icons-list .icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icons svg {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+/*Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms ease;
+}
+.modal-content {
+  padding: 16px;
+  background: var(--main-color);
+  margin: 0 auto;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms ease;
+}
+.close-btn {
+  background-color: var(--main-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #000;
+  font-size: 18px;
 }
